@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+</head>
+<style>
+    :root{
+        --main-color:rgb(127, 184, 105);
+        --head-font : vadera;
+
+
+    }
+    #box{
+        width: 600px;
+        height: 500px;
+        border: 2px solid red;
+        font-family: var(--head-font);
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        background: var(--main-color);
+        --m-color : red;
+        color: var(--m-color);
+    }
+    #box1{
+        width: 600px;
+        height: 500px;
+        border: 2px solid red;
+        font-family: var(--head-font);
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        background: var(--main-color);
+    }
+    #box2{
+        width: 600px;
+        height: 500px;
+        border: 2px solid red;
+        font-family: var(--head-font);
+        border-radius: 10px;
+        font-size: 1rem;
+        background: var(--main-color);;
+    }
+</style>
+<body>
+    <div id="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, similique maiores molestiae tempore eos odit atque animi laborum dolor enim reprehenderit molestias! Veritatis quos enim eligendi tempore, sapiente vel ipsa culpa voluptatum dolor reiciendis est accusantium harum quas delectus! Aliquid porro odit in nihil ducimus. Fuga eius dolore mollitia laboriosam?
+    </div>
+    <div id="box1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, similique maiores molestiae tempore eos odit atque animi laborum dolor enim reprehenderit molestias! Veritatis quos enim eligendi tempore, sapiente vel ipsa culpa voluptatum dolor reiciendis est accusantium harum quas delectus! Aliquid porro odit in nihil ducimus. Fuga eius dolore mollitia laboriosam?
+    </div>
+    <div id="box2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, similique maiores molestiae tempore eos odit atque animi laborum dolor enim reprehenderit molestias! Veritatis quos enim eligendi tempore, sapiente vel ipsa culpa voluptatum dolor reiciendis est accusantium harum quas delectus! Aliquid porro odit in nihil ducimus. Fuga eius dolore mollitia laboriosam?
+    </div>
+</body>
+</html>

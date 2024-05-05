@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font: 18px/24px arial;
+        }
+        #wrapper{
+            border: 1px solid black;
+            width: 1000px;
+            background: white;
+            margin: 0 auto;
+        }
+        #header{
+            height: 100px;
+            font-family: serif;
+            border-bottom: 1px solid black;
+        }
+
+        #header h1{
+            padding: 30px 0 0 20px;
+            margin: 0;
+        }
+
+        #menu{
+          border-bottom: 1px solid black;
+        }
+        #menu li{
+          display: inline-block;
+        }
+         
+        #menu li a{
+          display: block;
+          padding: 10px 13px;
+          text-decoration: none;
+        }
+        #menu li a:hover{
+          color: green;
+        }
+
+        #content{
+            width: 650px;
+            min-height: 500px;
+            padding: 15px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        #content h2{
+            font-family: serif;
+            clear: both;
+        }
+
+        #sidebar{
+            width: 200px;
+            min-height: 500px;
+            float: right;
+            border: 1px solid black;
+
+        }
+        #sidebar a{
+      text-decoration: none;
+      color: b;
+
+        }
+
+        #footer{
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 15px;
+            clear: both;
+            border: 1px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+   <div id="wrapper">
+    <div id="header">
+        <h1>M2Z INFO</h1>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h2>Sub Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione amet voluptates pariatur nulla, fugit totam adipisci laudantium ex fugiat saepe illum suscipit ut quo voluptatem laboriosam dolore porro delectus eaque cupiditate. Ex quod, odio id reprehenderit eaque non doloribus, voluptates eveniet ipsa, sequi quaerat magnam ratione veniam nam cum sint et explicabo quis architecto consectetur. A, pariatur. Qui atque molestiae, earum pariatur fugiat deserunt dignissimos officia consequuntur eos modi.</p>
+
+        <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+    </div>
+
+    <div id="sidebar">
+        <li><a href="">Home</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Contact us</a></li>
+    </div>
+    <div id="footer">
+        m2zinfo@gmail.com
+    </div>
+   </div>
+
+
+</body>
+</html>

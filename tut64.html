@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::after & ::before Selectors</title>
+</head>
+<style>
+    p{
+        font-size: 35px;
+        margin-top: 200px 0 0 50px;
+    }
+    /* p::after{
+        content: attr(class);
+        content: attr(data-caption);
+        color: red;
+    } */
+
+    p:hover:after{
+        /* content: attr(class); */
+        content: attr(data-caption);
+        color: red;
+    }
+</style>
+<body>
+
+    <h2>CSS Attribute Function</h2>
+
+    <p class="test" data-caption="Ansari">M2ZINFO</p>
+    
+</body>
+</html>

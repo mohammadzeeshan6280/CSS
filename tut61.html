@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Classes Selector</title>
+</head>
+<style>
+    /* li:first-child{
+        color: red;
+    } */
+
+    /* li:last-child{
+        color: red;
+    } */
+
+    /* #list li:last-child{
+        color: red;
+    } */
+
+    /* p:first-child{
+        color: red;
+    } */
+
+    /* p:last-child{
+        color: red;
+    } */
+
+    /* li:nth-child(3){
+        color: red;
+    } */
+
+    /* li:nth-child(2n){
+        color: red;
+    } */
+    /* li:nth-child(2n+1) {
+        color: red;
+    } */
+    /* li:nth-child(3n-1) {
+        color: red;
+    } */
+    /* li:nth-last-child(2n+1) {
+        color: red;
+    } */
+    /* li:nth-last-child(2n-2) {
+        color: red;
+    } */
+
+    /* p:nth-of-type(2){
+        color: red;
+    }
+    p:nth-of-type(2n){
+        color: red;
+    }
+    p:nth-of-type(2n+1){
+        color: red;
+    } */
+    /* 
+    p:nth-last-of-type(2){
+        color: red;
+    } */
+
+    /* p:nth-last-of-type(3){
+        color: red;
+    } */
+
+    /* li:only-child{
+    color: green;
+    } */
+
+    /* p:only-of-type{
+    color: green;
+    } */
+
+    /* li:first-of-type{
+        color: aqua;
+    } */
+    /* li:last-of-type{
+        color: rgb(95, 23, 143);
+    } */
+    
+    /* div:empty{
+        border: 2px solid green;
+    } */
+    /* p:not(.text){
+        color: rebeccapurple;
+    } */
+
+    /* p:lang(fr){
+        color: rgb(28, 197, 93);
+    }
+    p:lang(de){
+        color: rgb(55, 45, 196);
+    } */
+
+    /* ul a:link{
+        color: rgb(42, 228, 135);
+    } */
+    /* ul a{
+        color: red;
+    } */
+
+    /* ul a:hover{
+        color: blue;
+    }
+    ul a:visited{
+        color: green;
+    }
+    ul a:active{
+        color: purple;
+    } */
+
+    /* ul a{
+        text-decoration: none;
+        color: red;
+    }
+    p:target{
+        background: yellow;
+    } */
+
+    input:focus{
+        border: 2px solid red;
+    }
+
+   /* input[type='checkbox']:checked{
+    box-shadow: 0 0 0 2px red;
+   } */
+
+   /* input[type="radio"]:checked + label{
+    color: red;
+   } */
+
+   /* input[type="text"]:enabled{
+ border: 2px solid red;
+   } */
+
+   /* input:enabled{
+ border: 2px solid red;
+   } */
+
+   /* input[type="text"]:disabled{
+ border: 2px solid red;
+   } */
+   /* input:disabled{
+ border: 2px solid red;
+   } */
+
+   /* input:required{
+ border: 2px solid red;
+ background: lime;
+   } */
+
+   /* input:optional{
+ border: 2px solid red;
+ background: lime;
+   } */
+
+   /* input:in-range{
+ border: 2px solid red;
+ background: lime;
+   }
+
+   input:out-of-range{
+ border: 1px solid red;
+ background: pink;
+   } */
+
+   /* input:read-only{
+ border: 1px solid red;
+ background: pink;
+   } */
+
+   /* input:read-write{
+ border: 1px solid red;
+ background: rgb(9, 11, 161);
+   } */
+   
+   /* input:valid{
+ border: 1px solid rgb(192, 12, 117);
+ background: rgb(104, 13, 156);
+   } */
+
+   /* input[type='email']:valid{
+ border: 1px solid rgb(192, 12, 117);
+ background: rgb(104, 13, 156);
+   } */
+
+   /* input:invalid{
+ border: 1px solid red;
+ background: rgb(133, 29, 69);
+   } */
+   /* input[type='email']:invalid{
+ border: 1px solid rgb(192, 12, 117);
+ background: rgb(215, 205, 221);
+   } */
+
+   input:default{
+ box-shadow: 0 0 0 3px red;
+   }
+
+   ::placeholder{
+    color: brown;
+   }
+   
+   
+</style>
+
+<body>
+    <h1>Yahoo Baba: CSS Pseudo Classes Selector</h1>
+    <!-- <div></div> -->
+    <!-- <ul id="list">
+
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptate. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Incidunt, fugiat.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugiat! Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Vitae, officia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, quos? Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Debitis, dolorem.</p>
+
+    <ul id="list-two">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+
+    </ul>
+    <div>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam libero sed sint delectus sequi, minima cum
+            eos quos ad quaerat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nostrum, natus reiciendis suscipit
+            fugiat quaerat provident sit pariatur voluptatibus eius.</p>
+
+    </div> -->
+
+    <!-- <p lang="en">Hello Welcome to our website</p>
+    <p lang="fr">Hello Welcome to our website</p>
+    <p lang="de">Hello Welcome to our website</p> -->
+    
+    <!-- <ul id="list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul> -->
+
+    <!-- <ul id="list">
+        <li><a href="#html">What is HTML</a></li>
+        <li><a href="#css">What is CSS</a></li>
+        <li><a href="#js">What is JS</a></li>
+    </ul>
+    
+    <h2>ALL Answers</h2>
+    <p id="html">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur deserunt qui eveniet cum accusantium ducimus non possimus libero veniam cupiditate!</p>
+
+    <p id="css">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi dicta dolorum sunt distinctio velit id, ipsa iste corporis dolore sed.</p>
+
+    <p id="js">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A deserunt perspiciatis est quod exercitationem veritatis libero, quis illum velit incidunt!</p> -->
+
+    <form action="">
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" required readonly placeholder="Enter Your First Name"><br><br>
+
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname" disabled readonly placeholder="Enter you Last Name"><br><br>
+
+        <label for="age">Age: </label>
+        <input type="number" id="age" min="5" max="25"><br><br>
+
+        <label for="email">Your Email-Id: </label>
+        <input type="email" id="email" placeholder="Enter your Email" required><br><br>
+
+        <label for="hobbies">Your Hobbies: </label>
+        Sports<input type="checkbox" id="hobbies" name="hobbies">
+        Music<input type="checkbox" id="hobbies" name="hobbies">
+        Travel<input type="checkbox" id="hobbies" name="hobbies" checked>
+        Books Reading<input type="checkbox" id="hobbies" name="hobbies"><br><br>
+
+        <label for="gn">Your Gender: </label>
+        Male<input type="radio" id="gn" name="gn">
+        Female<input type="radio" id="gn" name="gn"><br><br>
+
+        <label for="country">Your Country: </label>
+     <select name="country" id="country">
+        <option value="india">India</option>
+        <option value="pk">Pakistan</option>
+        <option value="en">England</option>
+        <option value="as">Austrila</option>
+     </select><br><br>
+
+     <input type="submit" value="Submit">
+
+
+    </form>
+</body>
+
+</html>

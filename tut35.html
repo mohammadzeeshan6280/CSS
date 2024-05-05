@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Visibility</title>
+</head>
+<style>
+    ul{
+        visibility: visible;
+        visibility: hidden;
+        /* display: none; */
+    }
+
+    tr.first{
+        visibility: collapse;
+    }
+
+    td.second{
+        visibility: collapse;
+    }
+</style>
+<body>
+    <h2>CSS Visibility</h2>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+    </ul>
+
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint aliquid, doloremque et iure quod illum quidem praesentium porro, labore ad, veritatis laborum omnis excepturi eligendi nobis consectetur corporis eius aperiam nesciunt quaerat! Est, vero, cupiditate dolores ex harum et vel soluta obcaecati voluptatibus molestias quis deserunt placeat autem delectus.</p>
+    </div>
+
+    <table border="1">
+        <tr class="first">
+            <td>Yahoo</td>
+            <td>Baba</td>
+        </tr>
+        <tr>
+            <td>baba</td>
+            <td>Yahoo</td>
+        </tr>
+        <tr>
+            <td class="second">Yahoo</td>
+            <td>Baba</td>
+        </tr>
+    </table>
+</body>
+</html>

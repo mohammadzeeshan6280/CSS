@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 2D</title>
+</head>
+<style>
+.base{
+width: 350px;
+height: 250px;
+background: #ffaa45;
+text-align: center;
+margin: 100px 0 0 100px;
+
+}
+#box{
+    width: 350px;
+    height: 250px;
+    background: tan;
+    /* transform-origin: left bottom; */
+    /* transform: perspective(500px) rotateX(30deg); */
+    transform-origin: right center;
+    /* transform: perspective(300px) rotateY(-30deg); */
+    /* transform: rotateZ(30deg); */
+    /* transform: perspective(800px) rotateY(60deg) translateZ(200px); */
+    /* transform: perspective(800px) rotateY(60deg) translate3d(50px, 50px, 100px); */
+    /* transform: perspective(800px) scaleZ(1) rotateX(60deg) ; */
+    transform: perspective(800px) scale3d(2,2,1) rotateX(60deg) ;
+}
+
+
+</style>
+<body>
+    <div class="base">
+        <div id="box">Yahoo baba</div>
+    </div>
+
+  
+</body>
+</html>

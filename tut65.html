@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* counter-reset: my-counter 0; */
+            /* counter-reset: my-counter 50; */
+            /* counter-reset: my-counter 100; */
+            counter-reset: section;
+        }
+        h1{
+            font-size: 32px;
+       counter-reset: subsection;
+        }
+
+        /* h2::before{
+            content: "Chapter " counter(my-counter) " : ";
+            content: "Chapter " counter(my-counter, upper-alpha) " : ";
+            content: "Chapter " counter(my-counter, upper-roman) " : ";
+            counter-increment: my-counter 1;
+            color: red;
+        } */
+
+      h1::before{
+        content: "section " counter(section) " : ";
+        counter-increment: section;
+      }
+
+      h1::before{
+        content: "section " counter(subsection) " : ";
+        counter-increment: subsection;
+      }
+    </style>
+</head>
+<body>
+    <!-- <h1>CSS Counter-Increment</h1> -->
+    <!-- <ol>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ol> -->
+
+    <!-- <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, earum architecto repellendus sit natus corporis dolores voluptatibus ratione eaque hic!</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, earum architecto repellendus sit natus corporis dolores voluptatibus ratione eaque hic!</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, earum architecto repellendus sit natus corporis dolores voluptatibus ratione eaque hic!</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, earum architecto repellendus sit natus corporis dolores voluptatibus ratione eaque hic!</p> -->
+
+    <h1>HTML And CSS</h1>
+    <h2>HTML Tutorail</h2>
+    <h2>CSS Tutorail</h2>
+    <h2>Bootstrap Tutorail</h2>
+    <hr>
+
+    <h1>JavaScript</h1>
+    <h2>JavaScript Tutorail</h2>
+    <h2>jQuery Tutorail</h2>
+    <h2>JSON Tutorail</h2>
+    <hr>
+
+    <h1>Server Side</h1>
+    <h2>SQL Tutorail</h2>
+    <h2>PHP Tutorail</h2>
+ 
+    <hr>
+</body>
+</html>

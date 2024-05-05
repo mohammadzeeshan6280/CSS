@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-Fill-Mode</title>
+</head>
+<style>
+    .box{
+        width: 150px;
+        height: 150px;
+        background: black;
+        margin-left: 20px;
+        animation: sample 2s 5s forwards;
+        /* animation-fill-mode: both; */
+    }
+    .box:hover{
+        animation-play-state: paused;
+        
+    }
+    @keyframes sample{
+        0% {
+            background: yellow;
+            width: 250px;
+        }
+        50% {
+            background: rgb(115, 11, 175);
+            width: 350px;
+        }
+        100% {
+            background: rgb(209, 5, 32);
+            width: 450px;
+        }
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>

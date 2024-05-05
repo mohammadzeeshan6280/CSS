@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            background: green;
+            width: 700px;
+            height: 700px;
+            border: 2px solid red;
+            margin: 70px 0 0 50px;
+
+            /* grid-template-columns: 250px 200px auto; */ /* auto property se sara espas le leta hai */
+            /* grid-template-columns: 250px 200px 150px; */
+            /* grid-template-columns: 50% 25% auto; */
+            /* grid-template-columns: 50% 100px auto; */
+            /* grid-template-columns: 1fr 3fr 1fr; */
+            /* grid-template-columns: repeat(3, 150px); */
+            /* grid-template-columns: repeat(3, 150px) 1fr; */
+            display: grid;
+            /* grid-template-columns: repeat(3, 150px) 50%; */
+            grid-template-columns: 50% repeat(3, 150px);
+            /* grid-template-rows: 150px 100px 100px; */
+            /* grid-template-rows: repeat(2,1fr); */
+            grid-template-rows: 1fr 200px;
+            grid-gap: 20px;
+        }
+
+        .items1{
+            background: orangered;
+        }
+        .items2{
+            background: rgb(93, 197, 7);
+        }
+        .items3{
+            background: rgb(114, 15, 172);
+        }
+        .items4{
+            background: rgb(12, 113, 196);
+        }
+        .items5{
+            background: rgb(212, 5, 50);
+        }
+        .items6{
+            background: rgb(188, 235, 21);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Grid</h1>
+
+    <div class="container">
+        <div class="items items1">first</div>
+        <div class="items items2">second</div>
+        <div class="items items3">third</div>
+        <div class="items items4">four</div>
+        <div class="items items5">five</div>
+        <div class="items items6">six</div>
+    </div>
+</body>
+</html>

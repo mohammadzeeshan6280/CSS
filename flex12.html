@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+
+<style>
+    .container {
+        border: 2px solid black;
+        margin: 50px;
+        padding: 0px;
+
+        display: flex;
+        flex-direction: column;
+
+     
+    }
+
+
+    
+    .item1 {
+        background: orangered;
+      
+    }
+
+    .item2 {
+        background: rgb(77, 211, 15);
+        display: flex;
+
+    }
+
+    .item2 > .subitem{
+        background: wheat;
+        color: mediumorchid;
+        flex-grow: 1;
+        margin: 5px;
+    }
+
+    .item3 {
+        background: rgb(67, 15, 187);
+     
+    }
+
+
+    .items {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        padding: 0px;
+      height: 100px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">
+            
+            <div class="subitem subitem1">A</div>
+            <div class="subitem subitem2">B</div>
+            <div class="subitem subitem3">C</div>
+            </div>
+        <div class="items item3">Three</div>
+    </div>
+
+</body>
+
+</html>

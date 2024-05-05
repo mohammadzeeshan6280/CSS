@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 2D</title>
+</head>
+<style>
+    div {
+        font-size: 20px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .base {
+        width: 350px;
+        height: 250px;
+        background: #ffaa45;
+        text-align: center;
+        margin: 100px 0 0 100px;
+        perspective: 800px;
+        transform: rotateY(30deg);
+        transform-style: preserve-3d;
+
+
+    }
+
+    #box {
+        width: 350px;
+        height: 250px;
+        background: tan;
+        padding-top: 20px;
+        transform: rotateX(60deg);
+        transform-origin: bottom;
+    }
+</style>
+
+<body>
+    <div class="base">
+        <div id="box">Yahoo baba</div>
+    </div>
+
+
+</body>
+
+</html>

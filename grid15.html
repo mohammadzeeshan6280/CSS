@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            background: rgb(218, 230, 218);
+            width: 300px;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(2, 100px);
+
+        }
+.items{
+    max-width: 150px;
+}
+
+        .items1 {
+            background: orangered;
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            align-self: start;
+            z-index: 3;
+
+        }
+
+        .items2 {
+            background: rgb(93, 197, 7);
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            align-self: center;
+            justify-self: center;
+            z-index: 1;
+
+        }
+
+        .items3 {
+            background: rgb(114, 15, 172);
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            align-self: end;
+            justify-self: end;
+            z-index: 2;
+        }
+
+
+        .items4 {
+            background: rgb(12, 113, 196);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Grid</h1>
+
+    <div class="container">
+        <div class="items items1">first Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, vitae.</div>
+        <div class="items items2">second. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facere.</div>
+        <div class="items items3">Third Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, adipisci?</div>
+        <!-- <div class="items items4">four</div> -->
+          
+       
+    </div>
+</body>
+
+</html>

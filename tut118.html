@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder-shown</title>
+    <style>
+        body{
+            font-family: serif;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        input{
+            font-size: 20px;
+            border: 2px solid black;
+            width: 300px;
+            padding: 5px;
+        }
+
+        input[type="text"]:placeholder-shown{
+            border: 2px solid red;
+        }
+        /* input:placeholder-shown{
+            border: 2px solid red;
+        } */
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter Name"><br><br>
+    <input type="text" placeholder="Enter Address"><br><br>
+    <input type="number" placeholder="Enter Percentage"><br><br>
+    <input type="email" placeholder="Enter Email"><br><br>
+</body>
+</html>

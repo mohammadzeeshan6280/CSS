@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrentColor Value</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #box {
+            color: rgb(63, 158, 236);
+            width: 500px;
+            padding: 10px;
+            margin: 0 auto;
+            border: 1px solid currentColor;
+        }
+        #box h2{
+            border-bottom: 2px solid currentColor;
+        }
+        #box .readmore{
+            color: currentColor;
+            /* color: red; */
+            background: red;
+            /* background: currentColor; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS CurrentColor Mode</h1>
+
+    <div id="box">
+        <h2>M2Z INFO</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perferendis nemo ex quibusdam quisquam
+            incidunt vel nostrum neque quis maxime.</p>
+        <a class="readmore" href="">Readmore</a>
+    </div>
+</body>
+
+</html>

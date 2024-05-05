@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            background: rgb(218, 230, 218);
+            width: 650px;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 150px);
+            grid-auto-rows: 80px;
+
+        }
+
+
+        .items1 {
+            background: orangered;
+            order: 2;
+
+        }
+
+        .items2 {
+            background: rgb(93, 197, 7);
+            order: 4;
+
+        }
+
+        .items3 {
+            background: rgb(114, 15, 172);
+order: 2;
+        }
+
+        .items4 {
+            background: rgb(12, 113, 196);
+            order: 1;
+        }
+
+        .items5 {
+            background: rgb(212, 5, 50);
+            order: 6;
+        }
+
+        .items6 {
+            background: pink;
+order: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Grid</h1>
+
+    <div class="container">
+        <div class="items items1">first</div>
+        <div class="items items2">second.</div>
+        <div class="items items3">third</div>
+        <div class="items items4">four</div>
+        <div class="items items5">five</div>
+        <div class="items items6">six</div>
+        <!-- <div class="items items7">seven</div>
+        <div class="items items8">eight</div> -->
+    </div>
+</body>
+
+</html>

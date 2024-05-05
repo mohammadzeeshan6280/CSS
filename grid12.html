@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            background: rgb(218, 230, 218);
+            width: 650px;
+            margin: 20px 0 0 50px;
+
+            display: grid;
+            grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
+            /* grid-template-rows: repeat(2, 100px); */
+            grid-template-rows: repeat(2, minmax(100px, min-content));
+            grid-auto-rows: 80px;
+
+        }
+
+
+        .items1 {
+            background: orangered;
+
+        }
+
+        .items2 {
+            background: rgb(93, 197, 7);
+
+        }
+
+        .items3 {
+            background: rgb(114, 15, 172);
+
+        }
+
+        .items4 {
+            background: rgb(12, 113, 196);
+        }
+
+        .items5 {
+            background: rgb(212, 5, 50);
+        }
+
+        .items6 {
+            background: pink;
+
+        }
+
+        .items7 {
+            background: yellow;
+
+        }
+
+        .items8 {
+            background: teal;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Grid</h1>
+
+    <div class="container">
+        <div class="items items1">first Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente exercitationem labore rem adipisci accusantium necessitatibus quod illo itaque cum debitis nam minima voluptatibus repudiandae a iure in consequuntur, nihil est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur quis, eum, tempora quibusdam similique ut dicta voluptas temporibus quod ad quam consectetur officiis, vitae delectus reiciendis natus veritatis explicabo! Nesciunt aspernatur fugit cum tempora ipsum, at eveniet suscipit dicta? Cupiditate praesentium accusamus quae eos porro, hic tenetur doloribus inventore.</div>
+        <div class="items items2">second Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur esse cumque ab ut fugit! Quia ea at officiis voluptate pariatur.</div>
+        <div class="items items3">third</div>
+        <div class="items items4">four</div>
+        <div class="items items5">five</div>
+        <div class="items items6">six</div>
+        <!-- <div class="items items7">seven</div>
+        <div class="items items8">eight</div> -->
+    </div>
+</body>
+
+</html>

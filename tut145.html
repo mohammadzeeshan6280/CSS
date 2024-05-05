@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Container Query</title>
+</head>
+<style>
+.post{
+    /* border: 1px solid #000; */
+    /* width: 80%; */
+    /* height: 250px; */
+    /* aspect-ratio: 2 / 1; */
+    /* container-type: inline-size; */
+    /* container-type: size;  */
+    /* container-type: normal;  */
+    /* container-type: inline-size; 
+    container-name: mypost; */
+
+    /* container: mypost / inline-size; */
+}
+
+.post2{
+    margin-top: 20px;
+    border: 1px solid blue;
+    width: 70%;
+    /* container-type: inline-size; 
+    container-name: mypost; */
+    /* container: mypost / inline-size; */
+    container-type: inline-size;
+    container-name: mypost mycard;
+}
+
+.card h2{
+    /* font-size: 1em; */
+    /* font-size: 1cqw; */
+    /* font-size: 10cqw; */
+    /* font-size: 5cqh; */
+    /* font-size: 10cqb; */
+    /* font-size: 10cqi; */
+    /* font-size: 10cqmax; */
+    font-size: 10cqmin;
+}
+
+@container mypost (max-width : 400px){
+.card h2{
+    color: red;
+    font-size: 3em;
+}
+}
+@container mycard (max-width : 200px){
+.card h2{
+    color: blue;
+    font-size: 2em;
+}
+}
+
+/* @container (max-width : 400px){
+.card h2{
+    color: red;
+    font-size: 3em;
+}
+} */
+
+/* @container (max-height : 200px){
+.card h2{
+    color: red;
+    font-size: 3em;
+}
+} */
+</style>
+<body>
+     
+    <h1>@Container Query</h1>
+    <div class="post">
+        <div class="card">
+            <h2>Card Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nobis.</p>
+        </div>
+    </div>
+
+    <div class="post2">
+        <div class="card">
+            <h2>Card Title 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nobis.</p>
+        </div>
+        </div>
+</body>
+</html>

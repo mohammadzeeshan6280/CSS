@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        /* #box{
+            border: 2px solid red;
+            padding: 10px;
+        }
+        #box2{
+            border: 2px solid rgb(145, 40, 231);
+        } */
+        /* #box  p{
+           color: aqua;
+        } */
+
+        /* #box > p{
+           color: aqua;
+        } */
+        /* #box p {
+            color: rebeccapurple;
+        }
+
+       div p span{
+            color: rgb(72, 221, 58);
+        } */
+        /* #list li{
+            color: rgb(9, 255, 0);
+        }
+        #list > li{
+            color: blue;
+        } */
+
+        ul + p{
+            color: royalblue;
+        }
+
+        ul ~ p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Descendant Selector</h1>
+
+    <!-- <ul id="list">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <p>Lorem ipsum dolor <span>Lorem ipsum dolor sit amet.</span> sit amet consectetur adipisicing elit. Veniam ut est doloremque mollitia dolores iste voluptates possimus officiis minima ex.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab repellendus ea quos cupiditate optio consectetur qui animi veniam provident voluptate.</p>
+
+    <div id="box">
+        <span>Hello Ji</span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span>Lorem ipsum dolor sit amet.</span> Sapiente nesciunt ipsum eveniet obcaecati! Fugit officiis odit libero quae perspiciatis magni.</p>
+
+        <div id="box2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis facere omnis vel maiores odit sunt quis amet. Accusamus, et libero?</p>
+            
+        </div>
+    </div> -->
+
+    <ul id="list">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consequuntur?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consequuntur?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consequuntur?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consequuntur?</p>
+
+<h2>Sub Heading</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, repellat.</p>
+
+<div id="box">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, nam!</p>
+</div>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, totam.</p>
+
+</body>
+</html>

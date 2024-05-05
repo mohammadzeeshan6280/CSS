@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attribute Selectors</title>
+</head>
+<style>
+    p{
+        font-size: 19px;
+        line-height: 20px;
+    }
+    /* img[alt]{
+        border: 2px solid red;
+    } */
+
+    /* img[title]{
+        border: 2px solid red;
+    } */
+/* 
+    img[title='monkey']{
+        border: 2px solid red;
+    } */
+/* 
+    img[title^='monkey']{
+        border: 2px solid red;
+    } */
+
+    /* img[alt$='aliya']{
+        border: 2px solid red;
+    } */
+
+    /* img[src$='.jpeg']{
+        border: 2px solid red;
+    } */
+
+    /* img[alt*='bhat']{
+        border: 2px solid rgb(147, 38, 180);
+    } */
+
+    img[alt~='bhat']{
+        border: 2px solid rgb(147, 38, 180);
+    }
+
+    /* img[alt='aliya']{
+        border: 2px solid red;
+    } */
+
+    /* input[type]{
+        border: 2px solid rgb(79, 37, 196);
+    } */
+
+    /* input[type='text']{
+        border: 2px solid rgb(79, 37, 196);
+    } */
+
+    /* a[target]{
+        color: red;
+    } */
+</style>
+<body>
+    <h1>CSS Attribute Selector</h1>
+    <img src="/bg.jpg" alt="aliya bhat" width="200px" height="200px">
+    <p>Lorem ipsum <a href="">lorem</a> dolor sit amet consectetur adipisicing elit. <a href="#">yahoo</a> Maxime iusto eius qui et! Natus quaerat alias, <a href="https://google.com" target="_blank">google</a> dolorem nulla cum iure!</p>
+
+    <img src="/monkey.jpeg" width="200px" title="monkey" height="200px"> <br> <br>
+
+    Name: <input type="text"><br><br>
+    Gender: Male<input type="radio" name="gender">
+    Female<input type="radio" name="gender"> <br><br>
+    Address: <input type="text"><br> <br>
+    Password: <input type="password">
+
+</body> 
+</html> 

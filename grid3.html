@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            background: rgb(218, 230, 218);
+            width: 700px;
+            /* border: 2px solid red; */
+            margin: 20px 0 0 50px;
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 150px 150px;
+            grid-gap: 20px;
+
+        }
+
+
+        .items1{
+            background: orangered;
+            /* grid-row-start: 2;
+            grid-row-end: 3; */
+            /* grid-row: 2 / 3; */
+
+            /* grid-column-start: 3;
+            grid-column-end: 4; */
+            /* grid-column: 3 / 4; */
+
+            grid-area: 2 / 3 / 3 / 4;
+        }
+        .items2{
+            background: rgb(93, 197, 7);
+        }
+        .items3{
+            background: rgb(114, 15, 172);
+        }
+        .items4{
+            background: rgb(12, 113, 196);
+        }
+        .items5{
+            background: rgb(212, 5, 50);
+        }
+        .items6{
+            background: rgb(188, 235, 21);
+            /* grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2; */
+
+            /* grid-area: 2 / 1 / 2 / 2; */
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Grid</h1>
+
+    <div class="container">
+        <div class="items items1">first</div>
+        <div class="items items2">second</div>
+        <div class="items items3">third</div>
+        <div class="items items4">four</div>
+        <div class="items items5">five</div>
+        <div class="items items6">six</div>
+    </div>
+</body>
+</html>
